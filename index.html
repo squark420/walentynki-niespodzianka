@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hania & Filip | Love Story Premium</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --bg-dark: #121212;
             --gold: #D4AF37;
             --gold-dim: #8a7122;
-            --burgundy: #720e1e; /* Głębokie bordo */
+            --burgundy: #720e1e;
+            /* Głębokie bordo */
             --text-light: #f5f5f5;
             --glass: rgba(20, 20, 20, 0.8);
             --glass-border: rgba(212, 175, 55, 0.2);
@@ -36,7 +40,10 @@
         /* --- Tło Luxury (Animowane Cząsteczki) --- */
         #luxury-bg {
             position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             pointer-events: none;
             z-index: 0;
             overflow: hidden;
@@ -51,13 +58,28 @@
         }
 
         @keyframes floatDown {
-            0% { transform: translateY(-10vh) rotate(0deg); opacity: 0; }
-            10% { opacity: 0.8; }
-            90% { opacity: 0.8; }
-            100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+            0% {
+                transform: translateY(-10vh) rotate(0deg);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 0.8;
+            }
+
+            90% {
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: translateY(110vh) rotate(360deg);
+                opacity: 0;
+            }
         }
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             font-family: 'Playfair Display', serif;
             color: var(--gold);
             text-align: center;
@@ -69,6 +91,7 @@
             transform: translateY(30px);
             transition: opacity 1s ease-out, transform 1s ease-out;
         }
+
         .fade-in.visible {
             opacity: 1;
             transform: translateY(0);
@@ -100,7 +123,7 @@
             font-size: 1.2rem;
             letter-spacing: 3px;
             text-transform: uppercase;
-            color: rgba(255,255,255,0.6);
+            color: rgba(255, 255, 255, 0.6);
         }
 
         .scroll-indicator {
@@ -113,9 +136,22 @@
         }
 
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-            40% {transform: translateY(-10px);}
-            60% {transform: translateY(-5px);}
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-10px);
+            }
+
+            60% {
+                transform: translateY(-5px);
+            }
         }
 
         section {
@@ -136,13 +172,13 @@
         }
 
         .time-box {
-            background: rgba(0,0,0,0.5);
+            background: rgba(0, 0, 0, 0.5);
             border: 1px solid var(--glass-border);
             padding: 20px;
             border-radius: 5px;
             min-width: 100px;
             text-align: center;
-            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
         }
 
         .time-box span {
@@ -167,7 +203,8 @@
         }
 
         .timeline-item::before {
-            content: '♦'; /* Elegancki romb zamiast kropki */
+            content: '♦';
+            /* Elegancki romb zamiast kropki */
             position: absolute;
             left: -48px;
             top: 0px;
@@ -198,7 +235,8 @@
             width: 100%;
             max-width: 800px;
             margin: 50px auto 0;
-            overflow: hidden; /* Ukrywamy to co poza */
+            overflow: hidden;
+            /* Ukrywamy to co poza */
             border-radius: 20px;
             border: 1px solid var(--glass-border);
             background: #0a0a0a;
@@ -228,7 +266,7 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background: rgba(0,0,0,0.6);
+            background: rgba(0, 0, 0, 0.6);
             border: 1px solid var(--gold);
             color: var(--gold);
             width: 40px;
@@ -242,15 +280,24 @@
             align-items: center;
             justify-content: center;
         }
-        
-        .nav-btn:hover { background: var(--gold); color: black; }
-        .prev { left: 10px; }
-        .next { right: 10px; }
+
+        .nav-btn:hover {
+            background: var(--gold);
+            color: black;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
 
         /* --- Stats --- */
         .stat-row {
             margin-bottom: 30px;
-            background: rgba(255,255,255,0.03);
+            background: rgba(255, 255, 255, 0.03);
             padding: 20px;
             border-radius: 5px;
         }
@@ -321,7 +368,8 @@
             text-align: center;
             padding: 100px 20px;
             position: relative;
-            min-height: 400px; /* Miejsce na ucieczkę */
+            min-height: 400px;
+            /* Miejsce na ucieczkę */
         }
 
         .btn-group {
@@ -350,14 +398,15 @@
             color: #000;
             font-weight: 600;
         }
-        
+
         .btn-yes:hover {
             box-shadow: 0 0 30px var(--gold);
             transform: scale(1.05);
         }
 
         .btn-no {
-            position: relative; /* Pozwoli na zmianę na absolute */
+            position: relative;
+            /* Pozwoli na zmianę na absolute */
         }
 
         /* --- Music Control --- */
@@ -375,15 +424,22 @@
             color: var(--gold);
             cursor: pointer;
             z-index: 100;
-            background: rgba(0,0,0,0.8);
+            background: rgba(0, 0, 0, 0.8);
             transition: 0.3s;
         }
-        .music-control:hover { background: var(--gold); color: #000; }
+
+        .music-control:hover {
+            background: var(--gold);
+            color: #000;
+        }
 
         /* Modal Sukcesu */
         #success-overlay {
             position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             background: black;
             z-index: 9999;
             display: none;
@@ -392,7 +448,11 @@
             align-items: center;
             color: var(--gold);
         }
-        #success-overlay h1 { font-size: 4rem; margin-bottom: 20px; }
+
+        #success-overlay h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
 
         /* --- Album Section --- */
         .album-grid {
@@ -401,6 +461,7 @@
             gap: 15px;
             margin-top: 30px;
         }
+
         .album-item {
             position: relative;
             overflow: hidden;
@@ -410,31 +471,146 @@
             cursor: pointer;
             transition: transform 0.3s ease;
         }
+
         .album-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
+
         .album-item:hover {
             transform: scale(1.05);
             box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
             z-index: 10;
         }
+
         .album-item:hover img {
             transform: scale(1.1);
         }
 
+        /* --- Moon Phase --- */
+        .moon-section {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .moon-container {
+            width: 150px;
+            height: 150px;
+            margin: 30px auto;
+            border-radius: 50%;
+            background: #fff;
+            box-shadow: 0 0 40px rgba(255, 255, 255, 0.4), inset -25px 0 30px rgba(0, 0, 0, 0.8);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Faza księżyca - Waning Gibbous dla 17 czerwca 2025 */
+        .moon-phase {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: transparent;
+            border-radius: 50%;
+            box-shadow: inset 50px 0 20px rgba(0, 0, 0, 0.9);
+        }
+
+        /* --- Time Capsule --- */
+        .capsule-wrapper {
+            background: rgba(10, 10, 10, 0.8);
+            border: 1px solid var(--gold);
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
+        }
+
+        .capsule-lock {
+            font-size: 3rem;
+            color: var(--gold-dim);
+            margin-bottom: 20px;
+        }
+
+        .capsule-content {
+            display: none;
+            /* hidden by default */
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #ddd;
+            padding: 20px;
+            border-top: 1px solid rgba(212, 175, 55, 0.3);
+            margin-top: 20px;
+            animation: fadeIn 1s;
+        }
+
+        .capsule-countdown {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            color: var(--burgundy);
+            letter-spacing: 2px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.5rem; }
-            .timeline-item::before { left: -34px; font-size: 20px; }
-            .timeline { margin-left: 10px; padding-left: 20px; }
-            .slide { font-size: 1.2rem; padding: 20px; }
-            .btn-group { flex-direction: column; align-items: center; }
-            .btn { width: 100%; max-width: 200px; }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .timeline-item::before {
+                left: -34px;
+                font-size: 20px;
+            }
+
+            .timeline {
+                margin-left: 10px;
+                padding-left: 20px;
+            }
+
+            .slide {
+                font-size: 1.2rem;
+                padding: 20px;
+            }
+
+            .btn-group {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 200px;
+            }
+
+            .capsule-wrapper {
+                padding: 20px;
+                margin: 0 15px;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <div id="luxury-bg"></div>
@@ -455,7 +631,8 @@
             <div class="time-box"><span id="minutes">0</span>Min</div>
             <div class="time-box"><span id="seconds">0</span>Sek</div>
         </div>
-        <p style="text-align: center; margin-top: 20px; color: #666; font-size: 0.9rem;">(Licznik bije od 17 czerwca 2025)</p>
+        <p style="text-align: center; margin-top: 20px; color: #666; font-size: 0.9rem;">(Licznik bije od 17 czerwca
+            2025)</p>
     </section>
 
     <!-- Timeline -->
@@ -473,7 +650,7 @@
                 <p>Mały gest, wielkie znaczenie. Pamiętam Twój uśmiech.</p>
             </div>
             <div class="timeline-item fade-in">
-                <div class="timeline-date">9 Czerwca</div>
+                <div class="timeline-date">1 Czerwca</div>
                 <div class="timeline-title">Wizyta u mnie</div>
                 <p>Dom stał się nagle o wiele pełniejszy. I piękniejszy.</p>
             </div>
@@ -483,7 +660,7 @@
                 <p>Najlepsza decyzja w życiu.</p>
             </div>
             <div class="timeline-item fade-in">
-                <div class="timeline-date">18 Lipca</div>
+                <div class="timeline-date">17 Lipca</div>
                 <div class="timeline-title">Warszawa</div>
                 <p>Nasza pierwsza podróż. Wspomnienia, których nikt nam nie zabierze.</p>
             </div>
@@ -504,19 +681,22 @@
             </div>
             <button class="nav-btn next" onclick="moveSlide(1)">❯</button>
         </div>
-        <p style="text-align: center; margin-top: 15px; font-size: 0.8rem; color: #555;">(Kliknij strzałki, aby przewijać)</p>
+        <p style="text-align: center; margin-top: 15px; font-size: 0.8rem; color: #555;">(Kliknij strzałki, aby
+            przewijać)</p>
     </section>
 
     <!-- Stats -->
     <section>
         <h2 class="fade-in" style="margin-bottom: 40px;">Nasze Statystyki</h2>
-        
+
         <div class="stat-row fade-in">
             <div style="display:flex; justify-content:space-between;">
                 <h3>Zjedzone miski ramenu</h3>
                 <span>∞</span>
             </div>
-            <div class="progress-bar"><div class="progress-fill" style="width: 100%;"></div></div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 100%;"></div>
+            </div>
         </div>
 
         <div class="stat-row fade-in">
@@ -524,7 +704,9 @@
                 <h3>The Walking Dead</h3>
                 <span>11%</span>
             </div>
-            <div class="progress-bar"><div class="progress-fill" style="width: 11%;"></div></div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 11%;"></div>
+            </div>
         </div>
 
         <div class="stat-row fade-in">
@@ -532,7 +714,9 @@
                 <h3>From (Serial)</h3>
                 <span>100%</span>
             </div>
-            <div class="progress-bar"><div class="progress-fill" style="width: 100%;"></div></div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 100%;"></div>
+            </div>
         </div>
 
         <div class="stat-row fade-in">
@@ -540,8 +724,11 @@
                 <h3>Arcane (Serial)</h3>
                 <span style="color: #ff4d4d; font-weight: bold;">0%</span>
             </div>
-            <p style="font-size: 0.8rem; color: #888; margin-top: 5px;">(To już jest wręcz imponujące... musimy to zmienić! 😤)</p>
-            <div class="progress-bar"><div class="progress-fill" style="width: 0%; border: 1px solid #ff4d4d;"></div></div>
+            <p style="font-size: 0.8rem; color: #888; margin-top: 5px;">(To już jest wręcz imponujące... musimy to
+                zmienić! 😤)</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%; border: 1px solid #ff4d4d;"></div>
+            </div>
         </div>
 
         <div class="stat-row fade-in">
@@ -549,7 +736,9 @@
                 <h3>Racja w kłótniach (Hania)</h3>
                 <span>100%</span>
             </div>
-            <div class="progress-bar"><div class="progress-fill" style="width: 100%; background: var(--burgundy);"></div></div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 100%; background: var(--burgundy);"></div>
+            </div>
         </div>
     </section>
 
@@ -598,6 +787,39 @@
         </div>
     </section>
 
+    <!-- Moon Phase -->
+    <section class="moon-section fade-in">
+        <h2>Tak wyglądało niebo...</h2>
+        <p style="color: #aaa; margin-top: 10px; font-style: italic;">...kiedy podjęliśmy najlepszą decyzję. (17 Czerwca
+            2025)</p>
+        <div class="moon-container">
+            <div class="moon-phase"></div>
+        </div>
+        <p style="font-size: 0.9rem; color: var(--gold); text-transform: uppercase; letter-spacing: 2px;">Ubywający
+            Księżyc (Waning Gibbous)</p>
+    </section>
+
+    <!-- Time Capsule -->
+    <section class="fade-in">
+        <h2 style="margin-bottom: 40px;">Cyfrowa Kapsuła Czasu</h2>
+        <div class="capsule-wrapper">
+            <div class="capsule-lock" id="capsuleIcon">🔒</div>
+            <h3 style="margin-bottom: 10px; font-size: 1.5rem; color: #fff;">Mój list do Ciebie na naszą pierwszą
+                rocznicę</h3>
+            <p style="color: #888; font-size: 0.9rem;">Ta wiadomość jest zaszyfrowana i otworzy się automatycznie o
+                północy.</p>
+
+            <div class="capsule-countdown" id="capsuleTimer"></div>
+
+            <div class="capsule-content" id="capsuleText">
+                "Kochanie, jeśli to czytasz, minął właśnie nasz pierwszy, wspaniały rok.
+                Piszę to w Walentynki, nie mając pojęcia jak bardzo jeszcze moja miłość do Ciebie urośnie przez te
+                wszystkie miesiące,
+                ale wiem jedno - jesteś dla mnie wszystkim, moje słodkie kochanie. Dziękuję za każdy dzień. Kocham Cię."
+            </div>
+        </div>
+    </section>
+
     <!-- Final Question -->
     <section class="final-question fade-in" id="finalContainer">
         <h2>Ostatnie pytanie...</h2>
@@ -618,7 +840,8 @@
     <div id="success-overlay">
         <h1>KOCHAM CIĘ! ❤️</h1>
         <p>Wiedziałem, że wybierzesz dobrze.</p>
-        <button class="btn btn-yes" onclick="document.getElementById('success-overlay').style.display='none'" style="margin-top:30px;">Wróć</button>
+        <button class="btn btn-yes" onclick="document.getElementById('success-overlay').style.display='none'"
+            style="margin-top:30px;">Wróć</button>
     </div>
 
     <script>
@@ -628,17 +851,17 @@
             const el = document.createElement('div');
             el.classList.add('gold-particle');
             el.innerText = symbols[Math.floor(Math.random() * symbols.length)];
-            
+
             // Random Position
             el.style.left = Math.random() * 100 + 'vw';
-            
+
             // Random Size (small and elegant)
             const size = Math.random() * 15 + 10 + 'px';
             el.style.fontSize = size;
-            
+
             // Random Speed (slow)
             el.style.animationDuration = Math.random() * 5 + 8 + 's';
-            
+
             document.getElementById('luxury-bg').appendChild(el);
 
             setTimeout(() => el.remove(), 13000);
@@ -648,7 +871,7 @@
         // --- 2. Animations Fade In ---
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if(entry.isIntersecting) entry.target.classList.add('visible');
+                if (entry.isIntersecting) entry.target.classList.add('visible');
             });
         }, { threshold: 0.1 });
         document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
@@ -658,21 +881,22 @@
         let currentSlide = 0;
         const track = document.getElementById('track');
         const slides = document.querySelectorAll('.slide');
-        
+
         function moveSlide(direction) {
             currentSlide += direction;
             if (currentSlide < 0) currentSlide = slides.length - 1;
             if (currentSlide >= slides.length) currentSlide = 0;
-            
+
             track.style.transform = `translateX(-${currentSlide * 100}%)`;
         }
 
         // --- 4. Timer ---
-        const startDate = new Date("2025-06-17T00:00:00").getTime();
+        // Bez "T00:00:00+02:00" zmuszamy przeglądarkę do interpretacji jako strefa lokalna o północy na podstawie stringu
+        const startDate = new Date("2025/06/17").getTime();
         function updateTimer() {
             const now = new Date().getTime();
             const diff = Math.abs(now - startDate); // Absolute difference
-            
+
             const d = Math.floor(diff / (1000 * 60 * 60 * 24));
             const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
@@ -686,16 +910,38 @@
         setInterval(updateTimer, 1000);
         updateTimer();
 
+        // --- 4b. Capsule Timer ---
+        const anniversaryDate = new Date("2026/06/17").getTime();
+        function updateCapsule() {
+            const now = new Date().getTime();
+            const diff = anniversaryDate - now;
+
+            if (diff <= 0) {
+                document.getElementById('capsuleTimer').style.display = 'none';
+                document.getElementById('capsuleIcon').innerText = '🔓';
+                document.getElementById('capsuleIcon').style.color = 'var(--gold)';
+                document.getElementById('capsuleText').style.display = 'block';
+            } else {
+                const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const s = Math.floor((diff % (1000 * 60)) / 1000);
+                document.getElementById('capsuleTimer').innerText = `Otwarcie za: ${d}d ${h}g ${m}m ${s}s`;
+            }
+        }
+        setInterval(updateCapsule, 1000);
+        updateCapsule();
+
         // --- 5. Run Away Button (Fixed logic) ---
         function runAway() {
             const btn = document.getElementById('btnNo');
             const section = document.getElementById('finalContainer');
-            
+
             const containerRect = section.getBoundingClientRect();
             const btnRect = btn.getBoundingClientRect();
 
             // Ustawiamy pozycję absolutną względem kontenera przy pierwszej próbie
-            if(btn.style.position !== 'absolute') {
+            if (btn.style.position !== 'absolute') {
                 btn.style.position = 'absolute';
             }
 
@@ -720,8 +966,8 @@
             },
             {
                 q: "Jaki jest mój ulubiony kolor?",
-                answers: ["Niebieski", "Czerwony", "Biały", "Zielony"],
-                correct: 2 
+                answers: ["Niebieski", "Czerwony", "Biały[barwa ;)]", "Zielony"],
+                correct: 2
             },
             {
                 q: "Co jedliśmy na 1 spotkaniu?",
@@ -746,7 +992,7 @@
 
         function loadQuiz() {
             if (!quizContainer) return;
-            if(currentQ >= questions.length) {
+            if (currentQ >= questions.length) {
                 quizContainer.innerHTML = `<h3 style='color: var(--gold)'>Koniec! Twój wynik: ${score}/${questions.length}</h3>`;
                 return;
             }
@@ -762,10 +1008,10 @@
         function checkAnswer(index, btn) {
             const correct = questions[currentQ].correct;
             const buttons = quizContainer.querySelectorAll('button');
-            
+
             buttons.forEach(b => b.onclick = null);
 
-            if(index === correct) {
+            if (index === correct) {
                 btn.style.background = 'green';
                 btn.style.color = 'white';
                 score++;
@@ -785,8 +1031,8 @@
 
         // --- 6. Interaction Logic ---
         function redeem(el) {
-            if(!el.classList.contains('redeemed')) {
-                if(confirm("Wykorzystać ten kupon teraz?")) {
+            if (!el.classList.contains('redeemed')) {
+                if (confirm("Wykorzystać ten kupon teraz?")) {
                     el.classList.add('redeemed');
                     el.innerHTML = "<span>✔️</span>Wykorzystano";
                 }
@@ -796,13 +1042,14 @@
         function showLove() {
             document.getElementById('success-overlay').style.display = 'flex';
             // Explosion of particles
-            for(let i=0; i<50; i++) setTimeout(createParticle, i*20);
+            for (let i = 0; i < 50; i++) setTimeout(createParticle, i * 20);
         }
 
         function toggleMusic() {
             const audio = document.getElementById('bgMusic');
-            if(audio.paused) audio.play(); else audio.pause();
+            if (audio.paused) audio.play(); else audio.pause();
         }
     </script>
 </body>
+
 </html>
